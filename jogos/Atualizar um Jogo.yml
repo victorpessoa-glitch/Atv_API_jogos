@@ -1,0 +1,23 @@
+info:
+  name: Atualizar um Jogo
+  type: http
+
+http:
+  method: PUT
+  url: http://localhost:3000/jogos/1
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "God of War Ragnarok",
+        "desenvolvedora": "Santa Monica Studio",
+        "sinopse": "Sequela do jogo de 2018",
+        "genero_id": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

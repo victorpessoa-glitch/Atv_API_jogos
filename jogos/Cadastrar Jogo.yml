@@ -1,0 +1,23 @@
+info:
+  name: Cadastrar Jogo
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:3000/jogos
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Mario",
+        "desenvolvedora": "Nintendo",
+        "sinopse": "Jogo de aventura",
+        "genero_id": 2
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

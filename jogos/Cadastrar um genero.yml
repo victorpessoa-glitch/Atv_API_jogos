@@ -1,0 +1,22 @@
+info:
+  name: Cadastrar um genero
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/generos
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Ação",
+        "descricao": "Jogos de ação e aventura"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
